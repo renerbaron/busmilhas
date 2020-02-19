@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="pt-br"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="pt-br"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="pt-br"> <!--<![endif]-->
+<head>
+
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Bus Milhas</title>
+		<meta name="author" content="CC">
+		<!--[if gte IE 9]> <style type="text/css"> .gradient { filter: none; } </style> <![endif]-->
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
+
+		<!-- Include: CSS
+		================================================== -->
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/glyphicons.css">
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+
+		</head>
+
+		<body>
+		<!-- Header
+		================================================== -->
+		<div id="header-app">
+			<header role="header" class="bg-style">
+				<div class="container clearfix">
+					<p class="logo"></p>
+					<nav role="navigation">
+						<ul id="header_nav">
+							<li id="inicio"><a href="index.html"><span class="glyphicons home"><i></i></span><h6>Página Inicial</h6></a></li>
+							<li id="ganhemilhas"><a href="#"><span class="glyphicons coins"><i></i></span><h6>Ganhe Milhas</h6></a></li>
+							<li id="cadastro" class="no-border"><a href="#"><span class="glyphicons hand_up"><i></i></span><h6>Cadastre-se</h6></a></li>
+							<li class="config no-border">
+								<a id="exit" href="index.html"><span class="glyphicons power"><i></i></span><h6>Sair</h6></a>
+							</li>
+						</ul>
+					</nav>
+					<div id="Login">
+			    	<!-- Form Login
+			    	================================================== -->
+			    	<div id="loginComp" class="box-login login bg-style2">
+
+			    		<form id="formLogin" action="" method="post">
+			    			<header>
+			    				<label>Acesse sua conta</label>
+			    			</header>
+			    			<fieldset class="box-login-body">
+			    				<label for="RUSR_CPF">CPF</label>
+			    				<input id="RUSR_CPF" name="RUSR_CPF" type="text" tabindex="1" class="cpf">
+			    				<label for="USRPWD_PASSWORD">Senha</label>
+			    				<input id="USRPWD_PASSWORD" name="USRPWD_PASSWORD" type="password" tabindex="2">
+			    				<div class="group">
+			    					<input type="submit" class="btn-default" value="Entrar" tabindex="3">
+			    					<a href="#" id="go-to-lost-password">Esqueceu sua senha?</a>
+			    				</div>
+			    				<br><br>
+							  <!--
+							  loading que será exibido durante a consulta ao serviço de login -->
+							  <span class="loading"> Aguarde...</span>
+							  <br><br>
+
+							</fieldset>
+							<footer>
+								<label id="msg-feedback">Mensagem de retorno (positivo ou negativo).</label>
+							</footer>
+						</form>
+
+						<form id="formLostPassword" name="formLostPassword" action="" method="post">
+							<header>
+								<label>Recuperar senha</label>
+							</header>
+							<fieldset class="box-login-body">
+								<p class="message yellow label-gray bold">Informe seu email de cadastro. Você receberá um link para criar uma nova senha.</p>
+								<label for="RUSR_EMAIL">Digite seu email de cadastro</label>
+								<input id="RUSR_EMAIL" name="RUSR_EMAIL" type="text">
+								<div class="group">
+									<button class="btn-default btn-sendmail">Enviar</button>
+									<a href="#" id="back-to-login">Voltar para o login</a>
+								</div>
+								<br><br>
+							  <!--<hr>
+							  loading que será exibido durante a consulta ao serviço de login -->
+							  <span class="loading"> Aguarde...</span>
+							  <br><br>
+
+							</fieldset>
+							<footer>
+								<label id="msg-feedback">Mensagem de retorno email.</label>
+							</footer>
+						</form>
+						
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+		<!-- Content
+		================================================== -->
+		<div id="content-app">
+			<div id="main-content" class="main container clearfix row">
+
+			    <div id="breadcrumb">
+			        <span>Você está em:</span>
+			        <!-- <span class="separator"></span> -->
+			        <span>Página Inicial</span>
+			    </div>
+				
+				<div class="col12 bgblur">
+				    <div class="col6 box-default">
+						 <h5>::: Benefícios do Bus Milhas</h5>
+
+						 <p>Ut orci ligula, varius ac consequat in, rhoncus in dolor. Mauris pulvinar molestie accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean velit ligula, pharetra quis aliquam sed, scelerisque sed sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+						 <br>
+						 <a href="#" class="btn-default">CADASTRE-SE</a>
+						 <br><br><br>
+
+					</div>
+
+					<div class="col4 box-default">
+						<img src="assets/images/chamada.png">
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+
+		<div id="modal-app"></div>
+
+
+		<!-- Footer
+		================================================== -->
+		<div id="footer-app">
+			<footer id="main" class="bgfooter">
+				<div class="container clearfix row">
+					<p>Copyright © 2020 Bus Milhas</p> 
+				</div>
+			</footer>
+		</div>
+
+	</body>
+
+    <!-- Scripts
+    ================================================== -->
+    <script charset="utf-8" src="js/libs/jquery.min.js"></script>
+    <script charset="utf-8" src="js/libs/jquery.cookie.js"></script>
+    <script charset="utf-8" src="js/libs/jquery.validate.js"></script>
+    <script charset="utf-8" src="js/libs/jquery.maskedinput.min.js"></script>
+    <script charset="utf-8" src="js/libs/toastr.js"></script>
+    <script charset="utf-8" src="js/main.js"></script>
+
+    </html>
